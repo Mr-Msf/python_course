@@ -3,4 +3,5 @@ import math
 def circumference(r):
   return 2*math.pi*r
 
-print(circumference(3))
+def area(r):
+  return math.pi*r**2
