@@ -1,5 +1,5 @@
-def perimeter(l,w):
-  return (l+w)*2
+def perimeter(l,sl):
+  return (l+sl)*2
 
-def area(l,w):
-  return l*w
+def area(l,h):
+  return l*h
