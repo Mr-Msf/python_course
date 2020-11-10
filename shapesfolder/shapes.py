@@ -1,7 +1,7 @@
 from shapesfolder import circle
 from shapesfolder import square
 from shapesfolder import rectangle
-from shapesfolder import parallelogam
+from shapesfolder import parallelogram
 from shapesfolder import triangle
 from shapesfolder import trapezoid
 
@@ -31,9 +31,9 @@ def sparallelogram():
   l = 3
   h = 4
   sl = 3
-  print("For a parallelogam with l = {0}, h = {1}, and sl = {2}:".format(l,h,sl))
-  print("The perimeter is {0}.".format(parallelogam.perimeter(l,sl)))
-  print("The area is {0}.".format(parallelogam.area(l,h)))
+  print("For a parallelogram with l = {0}, h = {1}, and sl = {2}:".format(l,h,sl))
+  print("The perimeter is {0}.".format(parallelogram.perimeter(l,sl)))
+  print("The area is {0}.".format(parallelogram.area(l,h)))
   print("-------")
 
 def striangle():
