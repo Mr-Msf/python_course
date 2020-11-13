@@ -1,9 +1,9 @@
-from shapesfolder import circle
-from shapesfolder import square
-from shapesfolder import rectangle
-from shapesfolder import parallelogram
-from shapesfolder import triangle
-from shapesfolder import trapezoid
+from shapes import circle
+from shapes import square
+from shapes import rectangle
+from shapes import parallelogram
+from shapes import triangle
+from shapes import trapezoid
 
 def scircle():
   r = 3
