@@ -9,5 +9,5 @@ parallelogram.pyc
 square.pyc
 triangle.pyc
 trapezoid.pyc
-docs
+docs/shapes
 .DS_Store
