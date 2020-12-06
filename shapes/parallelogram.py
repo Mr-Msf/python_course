@@ -3,29 +3,37 @@
 Provides functions to calculate perimeter and area for a parallelogram.
 
 """
+from shapes.shapesmod import Shape
 
-def perimeter(l,sl):
-  """Calculates the perimeter given the base length and side length.
+class Parallelogram(Shape):
+  def __init__(self,length,width,height,units="m"):
+    super().__init__("parallelogram",units)
+    self.sidelength = length
+    self.width = width
+    self.height = height
+
+  def perimeter(self):
+    """Calculates the perimeter given the base length and side length.
   
-  Parameters:
-  ----------
-  l,sl
+    Parameters:
+    ----------
+    l,sl
 
-  Returns:
+    Returns:
   ----------
-  perimeter
-  """
-  return (l+sl)*2
+    perimeter
+    """
+    return (self.sidelength+self.width)*2
 
-def area(l,h):
-  """Calculates the area given the width and height.
+  def area(self):
+    """Calculates the area given the width and height.
   
-  Parameters:
-  ----------
-  l,h
+    Parameters:
+    ----------
+    l,h
 
-  Returns:
-  ----------
-  area
-  """
-  return l*h
+    Returns:
+    ----------
+    area
+    """
+    return self.width*self.height
