@@ -4,28 +4,34 @@ Provides functions to calculate perimeter and area for a square.
 
 """
 
-def perimeter(l):
-  """Calculates the perimeter given the length.
+from shapes.shapesmod import Shape
+class Square(Shape):
+  def __init__(self,length,units="m"):
+    super().__init__("square",units)
+    self.length = length
   
-  Parameters:
-  ----------
-  l
+  def perimeter(self):
+    """Calculates the perimeter given the length.
 
-  Returns:
-  ----------
-  perimeter
-  """
-  return l*4
+    Parameters:
+    ----------
+    l
 
-def area(l):
-  """Calculates the area given the length.
+    Returns:
+    ----------
+    perimeter
+    """
+    return self.length*4
+
+  def area(self):
+    """Calculates the area given the length.
   
-  Parameters:
-  ----------
-  l
+    Parameters:
+    ----------
+    l
 
-  Returns:
-  ----------
-  area
-  """
-  return l*l
+    Returns:
+    ----------
+    area
+    """
+    return self.length**2

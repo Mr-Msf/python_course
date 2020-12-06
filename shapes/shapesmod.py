@@ -1,3 +1,22 @@
+class Shape:
+  def __init__(self,shape_name,units):
+    self.units = units
+    self.shape_name = shape_name
+
+  def perimeter(self):
+    pass
+
+  def area(self):
+    pass
+
+  def get_info(self):
+    return f"\nShape: {self.shape_name.capitalize()} \nPerimeter = {self.perimeter()}{self.units} \nArea = {self.area()}{self.units}^2\n"
+
+
+
+
+
+"""
 from shapes import *
 
 def scircle():
@@ -59,3 +78,4 @@ def sshapes():
   sparallelogram()
   striangle()
   strapezoid()
+"""
