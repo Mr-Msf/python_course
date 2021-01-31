@@ -28,13 +28,18 @@ class Game:
     return False
 
   def display_frame(self, screen):
-    screen.fill((255, 255, 255))
-    color = (0, 0, 0)
-    center = (self.screen_w/2, self.screen_h/2)
-    radius = 10
-    pygame.draw.circle(screen, color, (0, 0), radius)
-    pygame.draw.circle(screen, color, (800, 600), radius)
-    pygame.draw.circle(screen, color, center, radius)
+    screen.fill((51, 153, 255))
+    pygame.draw.rect(screen, (102, 204, 0), (0, 500, 800, 100))
+    pygame.draw.rect(screen, (255, 153, 51), (300, 350, 200, 200))
+    pygame.draw.rect(screen, (255, 204, 153), (50, 350, 200, 200))
+    pygame.draw.rect(screen, (255, 153, 153), (550, 350, 200, 200))
+    pygame.draw.polygon(screen, (0,0,153), [(275,350), (525,350), (400, 225)])
+    pygame.draw.polygon(screen, (0,0,153), [(25,350), (275,350), (150, 225)])
+    pygame.draw.polygon(screen, (0,0,153), [(525,350), (775,350), (650, 225)])
+    pygame.draw.rect(screen, (102, 51, 0), (375, 450, 50, 100))
+    pygame.draw.rect(screen, (102, 51, 0), (125, 450, 50, 100))
+    pygame.draw.rect(screen, (102, 51, 0), (625, 450, 50, 100))    
+    pygame.draw.circle(screen, (255, 255, 0), (100, 100), 50)
     pygame.display.flip()
 
     
